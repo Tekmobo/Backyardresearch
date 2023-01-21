@@ -1,0 +1,107 @@
+<head>
+  
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="script.js"></script>
+</head>
+
+ <header>
+  <div class="logo">
+    <img src="https://www.top10vpn.com/static/images/logo.svg" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">What is a VPN</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="banner2" style="background-color: purple; height: 2px; width: 150vw; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-left: -50vw;">
+  <!-- Add your content here -->
+</div>
+<br>
+<body>
+
+<div class="banner" height: 100px; max-width: 900px; border-radius: 10px;">
+  <div class="banner-left">
+    <i class="fa fa-lock" style="color: red;"></i>
+    <span style="color: red; font-size: 24px;">Your IP Address is: <span id="ip-address"></span>   <script>
+    function getIpAddress() {
+      // retrieve the IP address using the fetch API
+      fetch("https://api.ipify.org?format=json")
+        .then(response => response.json())
+        .then(data => {
+          // display the IP address in the span element
+          document.getElementById("ip-address").textContent = data.ip;
+        });
+    }
+    // call the getIpAddress function when the page has loaded
+    window.onload = function() {
+      getIpAddress();
+    };
+  </script>
+    </span>
+    
+    <br>
+    <span style="color: black; font-size: 16px;"> <div><i class="fa fa-check" style="color: green;"></i> Encrypt your internet connection and protect your online privacy</div>
+  <div><i class="fa fa-check" style="color: green;"></i> Access websites and content that may be blocked in your region</div>
+  <div><i class="fa fa-check" style="color: green;"></i> Secure your connection while using public WiFi networks</div>
+</div></span>
+  <img2 src="https://www.top10vpn.com/static/images/logo.svg" alt="Banner image" class="banner-image" style="height: 100px;">
+</div>
+  
+
+<div class="top-10-item first-item">
+  <img src=https://www.top10vpn.com/images/2021/01/210119-ExpressVPN.svg alt="Product 2">
+  <div>
+   <h3><span class="product-name">Product 1</span>
+   
+   </h3>
+    <ul>
+      <li>Phasellus non mauris non</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+    </ul>
+    <div>
+    <span class="discount"></span>
+    <div>
+      <span class="cross-out">200</span>
+      <span class="price">100</span>
+    </div>
+    <a href="#">Visit Site</a>
+    <div class="review">
+      "This product is amazing! It has really helped with my baby's sleep routine."
+    </div>
+    <div class="review-score">4.5/5</div>
+     <div class="badge recommended">Recommended</div>
+  </div>
+  
+  </div>
+</div>
+<div class="top-10-item product">
+  <img src=https://www.top10vpn.com/images/2021/03/171012_Cyberghost.svg alt="Product 3">
+  <div>
+    <h3><span class="product-name">Product 3</span></h3>
+    <ul>
+      <li>Phasellus non mauris non</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+    </ul>
+    <div>
+      <span class="cross-out">$130</span>
+      <span class="price">$75</span>
+    </div>
+     <div class="discount"></div>
+    <a href="#">Visit Site</a>
+    <div class="review">
+      "This product is exactly what I was looking for. It's well-made and easy to use."
+    </div>
+    <div class="review-score">4.0/5</div>
+  </div>
+</div>
+<!-- continue with additional top-10-item divs for products 4-10 -->
+  
+</div>
+</body>

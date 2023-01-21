@@ -1,0 +1,276 @@
+<style>
+.reasons-list,
+.top-10-item {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+body {
+  margin: auto;
+  max-width: 900px;
+}
+.top-10-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 300px;
+}
+
+@media (max-width: 600px) {
+  .top-10-list {
+    max-width: 90%;
+  }
+}
+
+  .top-10-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    max-width: 900px;
+  }
+  .top-10-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .top-10-item h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .top-10-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .top-10-item li {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+  }
+.top-10-item .price {
+  color: red;
+  font-size: 36px;
+  /* add style to position price on the lower right */
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+
+.top-10-item a {
+  /* add style to position buy now button on the lower right */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003580;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* add shadow to button */
+}
+
+
+  .top-10-item a:hover {
+    text-decoration: underline;
+  }
+  .top-10-item .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .top-10-item .cross-out {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 36px;
+    position: absolute;
+  bottom: 50px;
+  right: 70px;
+  }
+
+.discount {
+  /* add style for the discount badge */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+ .top-10-item .review {
+  font-size: 16px;
+  color: green; /* change color to green */
+  margin-top: 10px;
+}
+
+  .top-10-item .review-score {
+    font-size: 20px;
+    color: #00b8d4;
+    margin-top: 10px;
+  }
+   .top-10-item .product-name {
+    color: #00b8d4;
+    margin-top: 10px;
+  }
+    .top-10-item .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+.top-10-item .recommended {
+  max-width: 100px; /* set a fixed width for the badge */
+  height: 30px; /* set a fixed height for the badge */
+  line-height: 30px; /* set the line height to the same as the height to center the text vertically */
+  text-align: left; /* center the text horizontally */
+  position: absolute;
+  top: -1px;
+  left:-1px; /* position the badge on the top left */
+  background-color: green; 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 0px;
+}
+
+
+
+
+.first-item {
+  border: 5px solid green; /* change border color to green */
+  border-radius: 5px;
+}
+
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* Align items to the start of the main axis */
+  padding: 0px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media (max-width: 200px) {
+  header ul {
+    display: none; /* hide the header links */
+  }
+}
+
+
+
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  img {
+    width: 150px;
+    height: 50px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #050505;
+  }
+
+  a:hover {
+    color: #030303;
+  }
+
+.banner {
+ max-width: 940px;
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  font-size: 16px;
+  background-color: #ededed;
+  background-position: right; /* position the image to the right of the element */
+  background-repeat: no-repeat; /* do not repeat the image */
+  background-size: cover;
+  background-size: contain; /* fit the image within the element while maintaining its aspect ratio */
+  background-image: url(https://icon2.cleanpng.com/20180406/jsw/kisspng-virtual-private-network-computer-icons-internet-an-35-5ac7702ba95c15.1784526715230198196937.jpg);
+  z-index: -1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+.banner-left {
+  flex: 1;
+}
+
+.banner-text {
+  font-family: Arial, sans-serif;
+}
+
+.fa-star {
+  color: gold;
+  font-size: 14px;
+}
+
+.fa-star-half-alt {
+  color: gold;
+  font-size: 14px;
+}
+
+.far.fa-star {
+  color: gold;
+  font-size: 14px;
+}
+
+.rating {
+  color: #666;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+
+Regenerate response
+
+
+</style>
